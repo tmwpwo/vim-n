@@ -1,0 +1,2 @@
+require("tmwpwo")
+print("hello")
