@@ -1,2 +1,2 @@
 require("tmwpwo.remap")
-print("hello from tmwpwo")
+require("tmwpwo.set")
