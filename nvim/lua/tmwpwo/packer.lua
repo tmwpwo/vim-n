@@ -16,7 +16,11 @@ return require('packer').startup(function(use)
 	}
 
 	
-	use { "catppuccin/nvim", as = "catppuccin" }
+	use ({ "catppuccin/nvim", 
+		as = "catppuccin",
+		config = function()
+			vim.cmd('colorscheme catppuccin')
+		end })
 	use { "windwp/nvim-autopairs",
     		config = function() require("nvim-autopairs").setup {} 
 		end}
